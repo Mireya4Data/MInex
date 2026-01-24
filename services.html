@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>MINEX - WordPress Solutions</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script src="js/tailwind.config.js"></script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased selection:bg-primary/20">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Top Navigation -->
+        <header
+            class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md">
+            <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="flex size-8 items-center justify-center rounded bg-primary text-white">
+                        <svg class="size-5" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"></path>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"></path>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">MINEX</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="services.html">Services</a>
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="portfolio.html">Work</a>
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#">About Us</a>
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="hidden sm:flex h-10 items-center justify-center rounded-lg bg-primary px-6 text-sm font-bold text-white transition-all hover:bg-blue-700 hover:shadow-lg hover:shadow-primary/20">
+                        Get Started
+                    </button>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 text-slate-600 dark:text-slate-300">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu (Hidden by default) -->
+            <div id="mobile-menu"
+                class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 py-4 shadow-lg absolute w-full left-0 top-16">
+                <nav class="flex flex-col gap-4">
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#">Services</a>
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#">Case Studies</a>
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#">About Us</a>
+                    <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#">Contact</a>
+                    <button
+                        class="flex w-full items-center justify-center rounded-lg bg-primary px-6 py-2.5 text-sm font-bold text-white transition-all hover:bg-blue-700 hover:shadow-lg hover:shadow-primary/20">
+                        Get Started
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <!-- Hero Section -->
+        <section class="relative bg-slate-900 py-20 lg:py-32">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0 overflow-hidden">
+                <div class="h-full w-full bg-cover bg-center opacity-40"
+                    data-alt="Modern office workspace with laptops and glass walls"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6fzSA4Q8ODfKAg9lGIhtDHNXmHNWMM1iWLEqNhBBaSYjppe0qjGXdbad1QWUk16jck75p_dZHl_A_XHBB-5vPG1AJY-hbMRONuMkwokGIgZKoiYD1wXFPRkianBH4M96xmiAKMWLrZUK-vUee44p2J-Un5pHgmK5m9keydyMDVPfmxmO62brAOW_FctUKeHSPf5TrLqOQaWHjdzXcw6NgHt-HVDXe7SiZWZ6dVy2COPwDttCE3Nu4igFlsXsjfg39r4ZvEbnwbzk');">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-slate-900/60"></div>
+            </div>
+            <div class="relative z-10 mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+                <h1
+                    class="mx-auto max-w-4xl text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+                    Expert WordPress Solutions <br class="hidden sm:block" /> for Growing Brands
+                </h1>
+                <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-300 sm:text-xl">
+                    We combine design, technology, and strategy to build digital products that scale. From custom themes
+                    to enterprise-grade security.
+                </p>
+                <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                    <button
+                        class="h-12 rounded-lg bg-primary px-8 text-base font-bold text-white transition-all hover:bg-blue-600 hover:shadow-lg hover:shadow-primary/25">
+                        View Our Services
+                    </button>
+                    <button
+                        class="h-12 rounded-lg border border-slate-600 bg-transparent px-8 text-base font-bold text-white transition-all hover:bg-white/10 hover:border-white">
+                        Talk to an Expert
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section Header -->
+        <div class="bg-background-light dark:bg-background-dark pt-20 pb-10">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+                <span
+                    class="mb-2 inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">Our
+                    Expertise</span>
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Comprehensive
+                    WordPress Services</h2>
+                <p class="mx-auto mt-4 max-w-2xl text-slate-600 dark:text-slate-400">
+                    From SEO to custom development, our team of experts provides end-to-end services to help your
+                    business thrive online.
+                </p>
+            </div>
+        </div>
+        <!-- Services Grid -->
+        <section class="bg-background-light dark:bg-background-dark pb-24">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Service Card 1: SEO -->
+                    <div
+                        class="group flex flex-col rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#151b2b] p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-none">
+                        <div
+                            class="mb-6 flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                            <span class="material-symbols-outlined text-[28px]">bar_chart</span>
+                        </div>
+                        <h3 class="mb-3 text-xl font-bold text-slate-900 dark:text-white">WordPress SEO</h3>
+                        <p class="mb-6 flex-grow text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Data-driven strategies to dominate search rankings and drive organic traffic using technical
+                            audits and content optimization.
+                        </p>
+                        <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:underline"
+                            href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Service Card 2: Performance -->
+                    <div
+                        class="group flex flex-col rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#151b2b] p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-none">
+                        <div
+                            class="mb-6 flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                            <span class="material-symbols-outlined text-[28px]">speed</span>
+                        </div>
+                        <h3 class="mb-3 text-xl font-bold text-slate-900 dark:text-white">Performance Optimization</h3>
+                        <p class="mb-6 flex-grow text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Lightning-fast load times for better user experience and higher conversion rates through
+                            caching, CDN, and code refinement.
+                        </p>
+                        <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:underline"
+                            href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Service Card 3: Custom Theme -->
+                    <div
+                        class="group flex flex-col rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#151b2b] p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-none">
+                        <div
+                            class="mb-6 flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                            <span class="material-symbols-outlined text-[28px]">palette</span>
+                        </div>
+                        <h3 class="mb-3 text-xl font-bold text-slate-900 dark:text-white">Custom Theme Design</h3>
+                        <p class="mb-6 flex-grow text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Pixel-perfect themes built specifically for your brand identity and business goals, ensuring
+                            a unique digital footprint.
+                        </p>
+                        <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:underline"
+                            href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Service Card 4: Security -->
+                    <div
+                        class="group flex flex-col rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#151b2b] p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-none">
+                        <div
+                            class="mb-6 flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                            <span class="material-symbols-outlined text-[28px]">shield</span>
+                        </div>
+                        <h3 class="mb-3 text-xl font-bold text-slate-900 dark:text-white">Security & Maintenance</h3>
+                        <p class="mb-6 flex-grow text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Proactive monitoring, malware scanning, and regular updates to keep your business safe and
+                            online 24/7.
+                        </p>
+                        <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:underline"
+                            href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Service Card 5: WooCommerce -->
+                    <div
+                        class="group flex flex-col rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#151b2b] p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-none">
+                        <div
+                            class="mb-6 flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                            <span class="material-symbols-outlined text-[28px]">shopping_cart</span>
+                        </div>
+                        <h3 class="mb-3 text-xl font-bold text-slate-900 dark:text-white">WooCommerce Dev</h3>
+                        <p class="mb-6 flex-grow text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Scalable e-commerce stores designed to sell more, manage inventory efficiently, and provide
+                            seamless checkout experiences.
+                        </p>
+                        <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:underline"
+                            href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Service Card 6: API Integration -->
+                    <div
+                        class="group flex flex-col rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#151b2b] p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-none">
+                        <div
+                            class="mb-6 flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                            <span class="material-symbols-outlined text-[28px]">extension</span>
+                        </div>
+                        <h3 class="mb-3 text-xl font-bold text-slate-900 dark:text-white">API Integrations</h3>
+                        <p class="mb-6 flex-grow text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Seamlessly connecting your site to your favorite CRM, marketing, and business tools for
+                            automated workflows.
+                        </p>
+                        <a class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:underline"
+                            href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feature Highlight Section -->
+        <section class="bg-white dark:bg-[#151b2b] py-20 border-y border-slate-100 dark:border-slate-800">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mb-12 text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white sm:text-4xl">Why Choose MINEX?</h2>
+                    <p class="mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+                        We don't just build websites; we build partnerships. Our dedicated support and transparent
+                        processes ensure you are always in the loop.
+                    </p>
+                </div>
+                <div class="grid gap-12 md:grid-cols-3">
+                    <!-- Feature 1 -->
+                    <div class="flex flex-col gap-4">
+                        <div
+                            class="aspect-video w-full overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800 shadow-inner">
+                            <div class="h-full w-full bg-cover bg-center transition-transform hover:scale-105 duration-500"
+                                data-alt="Person working on a laptop in a modern collaborative space"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8vSwiCLgMCNcWxyL3LW2IzDUSdPGdRFR7X6ohRvw6bN5KZc2OUrsaEhWSaFBudAEVSfIoIp0oVtc75LvBMa1ukXYbjWKfWK8fT0SGgFJpkQU0HUNiegC0agoKFH1MTcdiwnEv3K3o-SriNbdmGVeJXZ7gJQzlh1Fz1YQwVYAFpa0YkhneMVFgn6n_yNVaOmkXg9UQ-nAagRSY0NB2a76Rax2IQHT6Q1tgTB__KIXPVQVYW7Vm5CRBMUhGMv6iWfOVa11sk_JdQNI');">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Dedicated Account Manager</h3>
+                            <p class="mt-2 text-slate-600 dark:text-slate-400">
+                                You get a single point of contact who understands your business inside and out, ensuring
+                                clear communication.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="flex flex-col gap-4">
+                        <div
+                            class="aspect-video w-full overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800 shadow-inner">
+                            <div class="h-full w-full bg-cover bg-center transition-transform hover:scale-105 duration-500"
+                                data-alt="Team looking at a monitor discussing data"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCq9cZNrS64wHlzxtIBQ0GoYehqrTqaZHbnjoyah0BQmNnqQIh34HlsOFbKijARd69rOw_anVg4JtvSOJYJruo5RIDjWVibnlec6CuSBwKIvYe5utCMlamcDJ6uIpbihIZEgwh7Yr5cpG0APNiaxhbF1Jjqclok-rBf06bhfxKrQau0A7ZH-inquGd1VFnSLNMSVOIGkS8-UlYiaTpxY5kOrUZ1poHmnJje9W_x7AflNLTxU1sQWfm87x-y0YeL9lXgiMCxBtzuOCI');">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">24/7 Priority Support</h3>
+                            <p class="mt-2 text-slate-600 dark:text-slate-400">
+                                Our team is always on standby to resolve critical issues immediately, minimizing
+                                downtime for your business.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="flex flex-col gap-4">
+                        <div
+                            class="aspect-video w-full overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800 shadow-inner">
+                            <div class="h-full w-full bg-cover bg-center transition-transform hover:scale-105 duration-500"
+                                data-alt="Close up of financial data charts on a computer screen"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtbVfXpezQECNjm8qqx06Dxqk5dE6VYMZ_VB-xrnviIz3LDF_9x0DqxzXQqM_UwwiFL_5FqWzoJqGymA61kxEw5-5tty5h6a72_y3XIGEyS_QODY9WKPDQ7c3dlH-frMxdPEaRZgscz5ROmuDQLHR1NukmMs6S1ZdXMd0Vj5UE4PoPrsxixjPwFHZqRLG71AjC7QRna30rswK-bpmvmVlkQPXExB_QVw3SortXg0SDt244MB9TVS0QSJBkLv6cLk705l3QwRiVTG8');">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Transparent Reporting</h3>
+                            <p class="mt-2 text-slate-600 dark:text-slate-400">
+                                Monthly reports that show exactly where your budget is going, complete with KPI tracking
+                                and results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="bg-primary py-16">
+            <div class="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-white sm:text-4xl">Ready to elevate your WordPress experience?</h2>
+                <p class="mx-auto mt-4 max-w-2xl text-lg text-blue-100">
+                    Get in touch with us today for a free consultation and audit of your current digital presence.
+                </p>
+                <div class="mt-8 flex justify-center gap-4">
+                    <button
+                        class="h-12 rounded-lg bg-white px-8 text-base font-bold text-primary transition-all hover:bg-slate-100">
+                        Get a Free Quote
+                    </button>
+                    <button
+                        class="h-12 rounded-lg border border-white/30 bg-primary px-8 text-base font-bold text-white transition-all hover:bg-white/10">
+                        View Portfolio
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-16 pb-8">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid gap-12 sm:grid-cols-2 md:grid-cols-4">
+                    <!-- Brand -->
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-2">
+                            <div class="flex size-6 items-center justify-center rounded bg-primary text-white">
+                                <svg class="size-4" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"></path>
+                                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"></path>
+                                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"></path>
+                                </svg>
+                            </div>
+                            <span class="text-lg font-bold text-slate-900 dark:text-white">MINEX</span>
+                        </div>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">
+                            Empowering brands with scalable, secure, and high-performance WordPress solutions.
+                        </p>
+                    </div>
+                    <!-- Links Column 1 -->
+                    <div class="flex flex-col gap-3">
+                        <h4 class="font-bold text-slate-900 dark:text-white">Services</h4>
+                        <a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary"
+                            href="#">WordPress SEO</a>
+                        <a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary"
+                            href="#">Custom Development</a>
+                        <a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary"
+                            href="#">Security Audits</a>
+                        <a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary"
+                            href="#">WooCommerce</a>
+                    </div>
+                    <!-- Links Column 2 -->
+                    <div class="flex flex-col gap-3">
+                        <h4 class="font-bold text-slate-900 dark:text-white">Company</h4>
+                        <a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary"
+                            href="#">About Us</a>
+                        <a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary"
+                            href="#">Case Studies</a>
+                        <a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary"
+                            href="#">Careers</a>
+                        <a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary"
+                            href="#">Contact</a>
+                    </div>
+                    <!-- Links Column 3 -->
+                    <div class="flex flex-col gap-3">
+                        <h4 class="font-bold text-slate-900 dark:text-white">Connect</h4>
+                        <a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary"
+                            href="#">Twitter</a>
+                        <a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary"
+                            href="#">LinkedIn</a>
+                        <a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary"
+                            href="#">Instagram</a>
+                    </div>
+                </div>
+                <div
+                    class="mt-12 border-t border-slate-100 dark:border-slate-800 pt-8 text-center text-sm text-slate-500 dark:text-slate-400">
+                    © 2023 MINEX Agency. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Script -->
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>MINEX - Premium WordPress Agency</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind.config.js"></script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased overflow-x-hidden">
+    <div class="relative flex min-h-screen w-full flex-col group/design-root">
+        <!-- Navigation -->
+        <header
+            class="sticky top-0 z-50 w-full border-b border-solid border-b-[#222f49] bg-[#101623]/95 backdrop-blur-sm relative">
+            <div class="layout-container flex h-full grow flex-col">
+                <div class="px-4 md:px-10 flex justify-center py-3">
+                    <div class="layout-content-container flex w-full max-w-[1280px] items-center justify-between">
+                        <a href="index.html" class="flex items-center gap-4 text-white">
+                            <div class="size-8 text-primary flex items-center justify-center">
+                                <span class="material-symbols-outlined" style="font-size: 32px;">diamond</span>
+                            </div>
+                            <h2 class="text-white text-xl font-black leading-tight tracking-tight">MINEX</h2>
+                        </a>
+                        <div class="hidden md:flex items-center gap-10">
+                            <a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal"
+                                href="services.html">Services</a>
+                            <a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal"
+                                href="#">Work</a>
+                            <a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal"
+                                href="#">About</a>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <button
+                                class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-blue-600 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em] shadow-lg shadow-blue-900/20">
+                                <span class="truncate">Contact Us</span>
+                            </button>
+                            <!-- Mobile Menu Button -->
+                            <button class="md:hidden p-2 text-white">
+                                <span class="material-symbols-outlined">menu</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu (Hidden by default) -->
+            <div id="mobile-menu"
+                class="hidden md:hidden border-t border-[#222f49] bg-[#101623] px-4 py-4 shadow-lg absolute w-full left-0 top-full">
+                <nav class="flex flex-col gap-4">
+                    <a class="text-white hover:text-primary text-sm font-medium" href="services.html">Services</a>
+                    <a class="text-white hover:text-primary text-sm font-medium" href="portfolio.html">Work</a>
+                    <a class="text-white hover:text-primary text-sm font-medium" href="#">About</a>
+                </nav>
+            </div>
+        </header>
+        <main class="flex-1">
+            <!-- Hero Section -->
+            <section class="relative w-full overflow-hidden bg-[#101623]">
+                <!-- Decorative background elements -->
+                <div
+                    class="absolute top-0 right-0 -mr-20 -mt-20 h-[500px] w-[500px] rounded-full bg-primary/10 blur-[100px]">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 -ml-20 -mb-20 h-[300px] w-[300px] rounded-full bg-blue-600/10 blur-[80px]">
+                </div>
+                <div class="layout-container flex h-full grow flex-col relative z-10">
+                    <div class="px-4 md:px-10 flex flex-1 justify-center py-10 md:py-20">
+                        <div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+                            <div class="@container">
+                                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                                    <div class="flex flex-col gap-6 text-left max-w-[600px]">
+                                        <div
+                                            class="inline-flex items-center gap-2 rounded-full bg-surface-dark border border-[#314368] px-3 py-1 w-fit">
+                                            <span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                                            <span
+                                                class="text-xs font-medium text-text-secondary uppercase tracking-wider">Premium
+                                                WordPress Agency</span>
+                                        </div>
+                                        <h1
+                                            class="text-white text-5xl md:text-6xl font-black leading-[1.1] tracking-[-0.033em]">
+                                            Transform Your Digital Presence with <span class="text-primary">WordPress
+                                                Experts</span>
+                                        </h1>
+                                        <p class="text-text-secondary text-lg md:text-xl font-normal leading-relaxed">
+                                            We build high-performance, scalable websites that drive growth, engagement,
+                                            and measurable results for enterprise clients.
+                                        </p>
+                                        <div class="flex flex-col sm:flex-row gap-4 mt-2">
+                                            <button
+                                                class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary hover:bg-blue-600 transition-colors text-white text-base font-bold leading-normal shadow-lg shadow-blue-500/25">
+                                                <span class="truncate">Get a Free Audit</span>
+                                            </button>
+                                            <button
+                                                class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-surface-dark border border-[#314368] hover:border-primary/50 hover:text-primary transition-all text-white text-base font-bold leading-normal">
+                                                <span class="truncate">View Our Work</span>
+                                            </button>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-6 text-text-secondary text-sm">
+                                            <div class="flex -space-x-3">
+                                                <div class="h-8 w-8 rounded-full border-2 border-[#101623] bg-gray-300 bg-cover"
+                                                    data-alt="User avatar 1"
+                                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuClt5u6qLsf5-CpKU8nmJPX4sBEknatuXbysyFExJyJUnfwA6kXjK4HRoKGdLFqHhOfCGaV29wmRwuuVj18_79flIsSZHmNcSy-xBjU3HBJY42ooV69j5sH-OVF5pStRkebjzw5xzswRDgpsoYo_zCQosJ80sZOOmx9LAQFUSR1_cm0gRJS_ZYpLw2rWnvPdPXbZn9rYwpf3wo-ErTrpmDZ897lSJgGjaSVRDHOyTC4dPiIYUXt6DXsmsyJ1WqkZQ3xfPNAcPpGJUw");'>
+                                                </div>
+                                                <div class="h-8 w-8 rounded-full border-2 border-[#101623] bg-gray-300 bg-cover"
+                                                    data-alt="User avatar 2"
+                                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIsPI3r7kRvqFyTOnhngr5OgaPBF93VOtQiXXbStKpIUoEiJd6HE-IJ0Y4R0NOFpjLqpASnrwfcZp1NFU4UYfgRnt4NDcUir1bpoUUpHz65XOxwz93b5Cpapc8FeAXd0g_SOlyu2LjtNi_SFTmVCtqbv1BZJ6N5u3DvEPkPmZkH88selBSGjIiY7AcNux2_5iZb9N2wjwFmb9B6W7fsAhcUfbfTLiyjv5b2Av8rv_EQCMlmNxcmW00q2vungLFMDaGNjKwwaCzBE4");'>
+                                                </div>
+                                                <div class="h-8 w-8 rounded-full border-2 border-[#101623] bg-gray-300 bg-cover"
+                                                    data-alt="User avatar 3"
+                                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDpIv77YIsiSLVX4UPiCUrtshYAAnfrQPCNf8ayiWihyzEreJaSDpvqbrZQdExQ47yQFk01X9PACMUenLtsrwcFBNIrV1X6d7ARcOuoXeDEls7Jh0-9aS0xeUIuJ0L2ZBwxxYcqUUAJgNbx2sMoHbk_t4tdRLW-nOHKOoGrdS-mqowr251bW0JoRV_wDQXrOoYhcmb5E3W6aamb6R0Q8u7vToPPsFBBe3UcEDCrnkZL-3dvDfdND7XRC7y__TBPrkJu2rgC3coSg5w");'>
+                                                </div>
+                                            </div>
+                                            <p>Trusted by 500+ happy clients</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="relative rounded-2xl overflow-hidden border border-[#314368] bg-surface-dark shadow-2xl h-[400px] md:h-[500px]">
+                                        <!-- Abstract UI Dashboard Mockup -->
+                                        <div class="absolute inset-0 bg-cover bg-center opacity-80"
+                                            data-alt="Laptop displaying data analytics dashboard with graphs and charts"
+                                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBwhdilc6UhmZLyyxT1LJIr5mXlyrr8Iaiu-VvUyekT5nyN8sjDvLntJNoKM0D21c800_lt3-cPJE7SULmu_P6d__31aTocYXlDdKVhqn1NXACMzeBKhQVj_NR6a8mpTjLpj3EuS0_EFm1YVFAishwaVL_zz1jnJ9DRBYql3i7nLcDw8BUtJUTipEsj_UfpHc5ZERC-GymH7Z1G6l1noGp3vP8cuDbpya4HLkmbef8CgH1dxJVB--0bp9WoxbuCsSWM2YW6XE51N3o");'>
+                                        </div>
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-[#101623] via-[#101623]/20 to-transparent">
+                                        </div>
+                                        <div class="absolute bottom-8 left-8 right-8">
+                                            <div class="flex items-center gap-3 mb-2">
+                                                <span
+                                                    class="material-symbols-outlined text-green-400">trending_up</span>
+                                                <span class="text-white font-bold">Performance Update</span>
+                                            </div>
+                                            <div class="h-2 w-full bg-gray-700 rounded-full overflow-hidden">
+                                                <div class="h-full bg-primary w-[85%]"></div>
+                                            </div>
+                                            <div class="flex justify-between text-xs text-gray-400 mt-2">
+                                                <span>Speed Index: 0.8s</span>
+                                                <span class="text-green-400">+124% Improvement</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Expertise Section -->
+            <section class="py-20 bg-[#101623]">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+                        <div class="flex flex-col md:flex-row gap-10 justify-between items-end mb-12">
+                            <div class="flex flex-col gap-4 max-w-[720px]">
+                                <h2 class="text-white text-3xl md:text-4xl font-bold leading-tight">
+                                    Our Expertise
+                                </h2>
+                                <p
+                                    class="text-text-secondary text-base md:text-lg font-normal leading-normal max-w-[600px]">
+                                    Delivering comprehensive digital solutions tailored to your business goals with
+                                    precision and creativity.
+                                </p>
+                            </div>
+                            <a class="text-primary font-bold hover:text-white transition-colors flex items-center gap-1 group"
+                                href="services.html">
+                                View All Services
+                                <span
+                                    class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <!-- Card 1 -->
+                            <div
+                                class="group flex flex-1 gap-6 rounded-xl border border-[#314368] bg-surface-dark hover:border-primary/50 transition-all p-8 flex-col hover:-translate-y-1">
+                                <div
+                                    class="size-14 rounded-lg bg-[#256af4]/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined" style="font-size: 32px;">code</span>
+                                </div>
+                                <div class="flex flex-col gap-3">
+                                    <h3 class="text-white text-xl font-bold leading-tight">Custom Development</h3>
+                                    <p class="text-text-secondary text-base font-normal leading-relaxed">Tailored themes
+                                        and plugins built for speed, security, and scalability. We code with clean
+                                        standards.</p>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div
+                                class="group flex flex-1 gap-6 rounded-xl border border-[#314368] bg-surface-dark hover:border-primary/50 transition-all p-8 flex-col hover:-translate-y-1">
+                                <div
+                                    class="size-14 rounded-lg bg-[#256af4]/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined" style="font-size: 32px;">monitoring</span>
+                                </div>
+                                <div class="flex flex-col gap-3">
+                                    <h3 class="text-white text-xl font-bold leading-tight">SEO & Performance</h3>
+                                    <p class="text-text-secondary text-base font-normal leading-relaxed">Rank higher and
+                                        load faster. Our technical SEO audits and performance tuning ensure visibility.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div
+                                class="group flex flex-1 gap-6 rounded-xl border border-[#314368] bg-surface-dark hover:border-primary/50 transition-all p-8 flex-col hover:-translate-y-1">
+                                <div
+                                    class="size-14 rounded-lg bg-[#256af4]/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined" style="font-size: 32px;">edit_note</span>
+                                </div>
+                                <div class="flex flex-col gap-3">
+                                    <h3 class="text-white text-xl font-bold leading-tight">Content Strategy</h3>
+                                    <p class="text-text-secondary text-base font-normal leading-relaxed">Data-driven
+                                        storytelling that converts visitors into loyal customers through engaging copy.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Case Studies Section -->
+            <section class="py-20 bg-[#0d121c]">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+                        <div class="mb-10">
+                            <h2 class="text-white text-3xl md:text-4xl font-bold leading-tight mb-4">Case Studies</h2>
+                            <p class="text-text-secondary">See how we've helped businesses achieve their digital goals.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Large Featured Case Study -->
+                            <div
+                                class="group relative overflow-hidden rounded-xl border border-[#314368] aspect-video md:aspect-[16/10] col-span-1 md:col-span-2">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                    data-alt="Close up of a person working on a laptop in a modern office, displaying TechCorp website redesign"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDiLu9Xw8e3ANHT_zgXIDIzcRTLuoWpBFl_-jFCveBFtRaQH9OSM0rnHuU6un2iWQrBOG0lccqllBFyX4plKoE5ANQ2DSehqP5oGOxRDD1yjNje24fv5FmbMHU7fGb5qfEGwquSRBabaLAWN6XQoE_3tjBWljYSBw-HVbt_7MTjr-TH6bLxMnQdkitQsYYgt_EvmX5vpUQX1CY_1gBEtJbhrOM9RozzxwBhVB36lDW4uAmnhVFIY7uyTJD4AL8Xl7tjIuI0MvHUVzA");'>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
+                                </div>
+                                <div class="absolute bottom-0 left-0 p-8 w-full">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="flex gap-2 mb-2">
+                                            <span
+                                                class="px-2 py-1 rounded bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider border border-primary/20">E-Commerce</span>
+                                        </div>
+                                        <h3 class="text-white text-2xl md:text-3xl font-bold">TechCorp Global Redesign
+                                        </h3>
+                                        <div class="flex items-center gap-6 mt-2 text-text-secondary">
+                                            <span class="flex items-center gap-2"><span
+                                                    class="material-symbols-outlined text-green-400 text-sm">arrow_upward</span>
+                                                150% Traffic Increase</span>
+                                            <span class="flex items-center gap-2"><span
+                                                    class="material-symbols-outlined text-green-400 text-sm">bolt</span>
+                                                0.5s Load Time</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Smaller Case Study 1 -->
+                            <div class="group relative overflow-hidden rounded-xl border border-[#314368] aspect-video">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                    data-alt="Person holding a smartphone showing FinTech app interface"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDkn8nQ4p6r75oC1lUNQt6Duxn_8kTZfNaz6mWSxIFx8QDVJs_by7G8cJGLRUO4fq3ci6W8n0d4THOeRXkx8tRQdUzhp5hxvsGMUKqlPugXCWKSRpdMJCsDju7cCg4gZDrzPQfetgA7lSvI9uuFOgkjyOUbzN5m67AsNuNEI3sZR6xep9h2-vV0xZJK9Apr57s3cG3cyxBWifNBH4EiJHfpiqGPDDMYejPO33nfziQg6ND6MJmpLiJIrZT6Z7BxjHrlfUAkFxnia7c");'>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent">
+                                </div>
+                                <div class="absolute bottom-0 left-0 p-6 w-full">
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-white text-xl font-bold">FinTech App Launch</h3>
+                                        <p class="text-text-secondary text-sm">User Acquisition Strategy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Smaller Case Study 2 -->
+                            <div class="group relative overflow-hidden rounded-xl border border-[#314368] aspect-video">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                    data-alt="Team of people working together around a table with laptops"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBylYnHG0LZnpg3QGZdseXPr3YWqzUN1AIQ1KZGZE48VlE7q_4W11mhBn80uW_8ekfwy2pmeZDQTSIgBxgBeNY6W4yjmpSL8itAScFOpDliOwwUVntoKFk1Hx2lBNLMEsh3zy7WVjROGLhSfCX50oA7LcHsbg5lH_gz7qDYTNUQaI-UbvK1sFABhZ3QWPFuqtTSk4PpchAroz6krWquAJlw5wGvAcQznzGVjbJkCYuNwxnOMvWzNczsCQvPwdXv8b5GO1udvgZbW5w");'>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent">
+                                </div>
+                                <div class="absolute bottom-0 left-0 p-6 w-full">
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-white text-xl font-bold">HealthStream Portal</h3>
+                                        <p class="text-text-secondary text-sm">Patient Portal UX Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonials -->
+            <section class="py-20 bg-[#101623]">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1280px] flex-1">
+                        <div class="flex flex-col items-center text-center mb-16">
+                            <h2 class="text-white text-3xl md:text-4xl font-bold leading-tight mb-4">Trusted by Industry
+                                Leaders</h2>
+                            <p class="text-text-secondary max-w-[600px]">Don't just take our word for it. Hear what our
+                                partners have to say about working with MINEX.</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- Testimonial 1 -->
+                            <div class="bg-surface-dark p-8 rounded-xl border border-[#314368] relative">
+                                <div class="absolute -top-4 left-8 text-primary bg-surface-dark px-2">
+                                    <span class="material-symbols-outlined text-4xl">format_quote</span>
+                                </div>
+                                <p class="text-white text-lg leading-relaxed mb-6 mt-4">"MINEX revolutionized our online
+                                    sales channel. Their attention to detail and technical expertise is unmatched in the
+                                    WordPress space."</p>
+                                <div class="flex items-center gap-4">
+                                    <div class="size-12 rounded-full bg-cover bg-center"
+                                        data-alt="Portrait of Sarah Jenkins"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGDxeSi-0XExXVxmULRjmTTgFE1fraGcHXNpjs_lRjPMX9AxBP6e5vyv9vBPRYw7ij4VRF76MTMqjUzpYEquM6RFVXi_wcjs8Ka3ElXkOoJofTfZTYLAs8o-fsIoBuTPSmJQGkKANgjUGzQTTu5820sab-Tyslp-vz55_NM10rPpwaHPZ2vt_yL-vInz8b1Os4CI0SwWiHBHRO5zYRiPR5bsUJ93mDgHYP48yxSiEaLhHYg4sIx0RnYCXP8UbcVDpqsmdZcufB_dY");'>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-sm">Sarah Jenkins</h4>
+                                        <p class="text-text-secondary text-xs">CEO, TechStart Inc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial 2 -->
+                            <div class="bg-surface-dark p-8 rounded-xl border border-[#314368] relative mt-8 md:mt-0">
+                                <div class="absolute -top-4 left-8 text-primary bg-surface-dark px-2">
+                                    <span class="material-symbols-outlined text-4xl">format_quote</span>
+                                </div>
+                                <p class="text-white text-lg leading-relaxed mb-6 mt-4">"We saw a 200% increase in leads
+                                    within 3 months of launching our new site. The team was professional, fast, and
+                                    delivered beyond expectations."</p>
+                                <div class="flex items-center gap-4">
+                                    <div class="size-12 rounded-full bg-cover bg-center"
+                                        data-alt="Portrait of Mark Thompson"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD6fKFKdgyXNLqd4i6nRRpHbo3qBRmSwEWmmQYqh8jz9b2niA7w7-y4JXySYL_XlZawZ0iC48cK29epgxHDmn_RI5Cw77jEZ2e0F9G7KzEH9BgszmCmkZoEec6BDCTT6ftdNWCsR1032Qf2ZVISK1EsVc8GDhUpYt3fxjVd34fiydDMWVkFHBmrLKgwflaOrJw-1ofur-miKEhRjZfRZsqEZdQfbKahj3JfDTosZgJGAVAhPqPtYeoq_iATLlE5r3dKYZ1s8xtU7u0");'>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-sm">Mark Thompson</h4>
+                                        <p class="text-text-secondary text-xs">Marketing Director, FinServe</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial 3 -->
+                            <div class="bg-surface-dark p-8 rounded-xl border border-[#314368] relative mt-8 md:mt-0">
+                                <div class="absolute -top-4 left-8 text-primary bg-surface-dark px-2">
+                                    <span class="material-symbols-outlined text-4xl">format_quote</span>
+                                </div>
+                                <p class="text-white text-lg leading-relaxed mb-6 mt-4">"The audit they provided was an
+                                    eye-opener. They fixed issues we didn't even know we had. Highly recommended for any
+                                    serious business."</p>
+                                <div class="flex items-center gap-4">
+                                    <div class="size-12 rounded-full bg-cover bg-center"
+                                        data-alt="Portrait of Emily Rodriguez"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRVE_DfYs6Na8G-WwVbObCzDK5M7iGJTYlbVT7iHjmrqX_4GIUGCL02r_T-1XuediJeKZVGccay85-QhZLAropOzI6JCoSsGQss6jfhyT2-tT97pmwXXs6cUh5RdJ5EWOmHGkmbt8LerRORH2KY2gssjx3CJgwL8yoJhIF-k0hQOguS25HEgBuh84sSmsym8KwzkUX8vwrOwM2_hTR7H9ECDeXfK1PgQ3P25k-TGE9L7ENvyp9bbbKdJc6-zPdpFWxtSV8pW8b3G8");'>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-sm">Emily Rodriguez</h4>
+                                        <p class="text-text-secondary text-xs">Founder, GreenLife</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CTA Section -->
+            <section class="py-20 bg-[#101623] border-t border-[#222f49]">
+                <div class="px-4 md:px-10 flex justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[960px] w-full items-center text-center">
+                        <h2 class="text-white text-3xl md:text-5xl font-black mb-6">Ready to scale your business?</h2>
+                        <p class="text-text-secondary text-lg mb-8 max-w-2xl">Get a comprehensive audit of your current
+                            digital presence and a roadmap for growth.</p>
+                        <button
+                            class="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-primary hover:bg-blue-600 transition-colors text-white text-lg font-bold shadow-xl shadow-blue-900/30">
+                            Start Your Project
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-[#0b0f19] border-t border-[#222f49] pt-16 pb-8">
+            <div class="layout-container flex flex-col items-center">
+                <div class="px-4 md:px-10 w-full max-w-[1280px]">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                        <!-- Brand Column -->
+                        <div class="col-span-1 md:col-span-1">
+                            <a href="index.html" class="flex items-center gap-2 text-white mb-6">
+                                <div class="size-6 text-primary flex items-center justify-center">
+                                    <span class="material-symbols-outlined">diamond</span>
+                                </div>
+                                <h2 class="text-lg font-bold tracking-tight">MINEX</h2>
+                            </a>
+                            <p class="text-text-secondary text-sm leading-relaxed mb-6">
+                                Premium WordPress development and marketing agency helping brands achieve digital
+                                excellence.
+                            </p>
+                            <div class="flex gap-4">
+                                <a class="text-text-secondary hover:text-white transition-colors" href="#">
+                                    <span class="sr-only">Twitter</span>
+                                    <span class="material-symbols-outlined text-lg">public</span>
+                                </a>
+                                <a class="text-text-secondary hover:text-white transition-colors" href="#">
+                                    <span class="sr-only">LinkedIn</span>
+                                    <span class="material-symbols-outlined text-lg">share</span>
+                                </a>
+                                <a class="text-text-secondary hover:text-white transition-colors" href="#">
+                                    <span class="sr-only">Instagram</span>
+                                    <span class="material-symbols-outlined text-lg">rss_feed</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Links Columns -->
+                        <div>
+                            <h3 class="text-white font-bold mb-6">Company</h3>
+                            <ul class="flex flex-col gap-3 text-sm text-text-secondary">
+                                <li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+                                <li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+                                <li><a class="hover:text-primary transition-colors" href="#">Case Studies</a></li>
+                                <li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-bold mb-6">Services</h3>
+                            <ul class="flex flex-col gap-3 text-sm text-text-secondary">
+                                <li><a class="hover:text-primary transition-colors" href="services.html">WordPress
+                                        Development</a></li>
+                                <li><a class="hover:text-primary transition-colors" href="services.html">SEO
+                                        Optimization</a></li>
+                                <li><a class="hover:text-primary transition-colors" href="services.html">Content
+                                        Strategy</a></li>
+                                <li><a class="hover:text-primary transition-colors" href="services.html">UI/UX
+                                        Design</a></li>
+                            </ul>
+                        </div>
+                        <!-- Newsletter -->
+                        <div>
+                            <h3 class="text-white font-bold mb-6">Stay Updated</h3>
+                            <p class="text-text-secondary text-sm mb-4">Subscribe to our newsletter for the latest
+                                WordPress insights.</p>
+                            <form class="flex flex-col gap-3">
+                                <input
+                                    class="h-10 w-full rounded-md border border-[#314368] bg-[#101623] px-3 text-sm text-white placeholder-gray-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                                    placeholder="Enter your email" type="email" />
+                                <button
+                                    class="h-10 w-full rounded-md bg-white text-black font-bold text-sm hover:bg-gray-200 transition-colors"
+                                    type="button">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div
+                        class="border-t border-[#222f49] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                        <p class="text-text-secondary text-xs">© 2023 MINEX Agency. All rights reserved.</p>
+                        <div class="flex gap-6 text-xs text-text-secondary">
+                            <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                            <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Script -->
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
